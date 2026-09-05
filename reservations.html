@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dine-In &amp; Takeaway Orders — Efren Bistro &amp; Grill Downtown Srinagar</title>
+  <meta name="description" content="Reserve a cozy table or place a ready-to-eat takeaway order at Efren Bistro & Grill in Khoja Bazar, Downtown Srinagar. Call +91 78897 81101 or navigate via Google Maps.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-obsidian">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-crest" aria-label="Efren Bistro & Grill Home">
+          <div class="brand-monogram">E</div>
+          <div class="brand-text">
+            <span class="brand-name">EFREN</span>
+            <span class="brand-tag">Bistro &amp; Grill · Downtown Srinagar</span>
+          </div>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a href="index.html" class="nav-link"><span class="nav-num">I.</span> Home</a>
+          <a href="story.html" class="nav-link"><span class="nav-num">II.</span> Heritage</a>
+          <a href="menu.html" class="nav-link"><span class="nav-num">III.</span> The Menu</a>
+          <a href="atmosphere.html" class="nav-link"><span class="nav-num">IV.</span> The Bistro</a>
+          <a href="reservations.html" class="nav-link active"><span class="nav-num">V.</span> Dine-In &amp; Orders</a>
+        </nav>
+
+        <div class="header-cta-wrap">
+          <a href="https://maps.app.goo.gl/sVBspjCtsgYMoenR8" target="_blank" class="btn-ghost-brass" style="padding: 10px 18px; font-size: 0.72rem;">📍 Find Us</a>
+          <a href="tel:+917889781101" class="btn-brass">Call to Order ✦</a>
+          <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="drawer-top-bar">
+      <div class="brand-monogram">E</div>
+      <button class="drawer-close" aria-label="Close menu">✕</button>
+    </div>
+    <a href="index.html" class="nav-link"><span class="nav-num">I.</span> Home</a>
+    <a href="story.html" class="nav-link"><span class="nav-num">II.</span> Our Story</a>
+    <a href="menu.html" class="nav-link"><span class="nav-num">III.</span> The Menu</a>
+    <a href="atmosphere.html" class="nav-link"><span class="nav-num">IV.</span> The Bistro</a>
+    <a href="reservations.html" class="nav-link active"><span class="nav-num">V.</span> Dine-In &amp; Orders</a>
+    <div style="margin-top: 36px; display: flex; flex-direction: column; gap: 12px;">
+      <a href="tel:+917889781101" class="btn-brass" style="width: 100%; text-align: center;">Call: +91 78897 81101</a>
+      <a href="https://maps.app.goo.gl/sVBspjCtsgYMoenR8" target="_blank" class="btn-ghost-brass" style="width: 100%; text-align: center;">📍 Open Google Maps</a>
+    </div>
+  </div>
+
+  <!-- ================= BANNER ================= -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="page-banner-inner reveal-on-scroll">
+        <div class="eyebrow">Dine-In &amp; Ready-To-Eat</div>
+        <h1 class="section-title">Save a Table or <em>Order Ahead</em></h1>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Whether you want a cozy table inside our brick room in Khoja Bazar or want your meal packed piping hot for takeaway, let us know and we’ll have the grill ready.
+        </p>
+        <div class="ornate-divider center">✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DINE-IN / ORDER FORM ================= -->
+  <section class="editorial-section bg-obsidian" id="booking-form-anchor">
+    <div class="container">
+      
+      <div class="booking-panel reveal-on-scroll">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto 40px;">
+          <div class="eyebrow">Downtown Srinagar Service</div>
+          <h2 class="section-title" style="font-size: 2.2rem;">Dine-In &amp; <em>Order Request</em></h2>
+          <p style="font-size: 0.95rem; color: var(--text-muted);">
+            Fill in your details below or call our counter directly at <strong>+91 78897 81101</strong>.
+          </p>
+        </div>
+
+        <form id="efren-booking-form">
+          <input type="hidden" id="selected-seating" value="Cozy Dine-In Table">
+
+          <div class="booking-form-grid">
+            
+            <!-- Guest Full Name -->
+            <div class="form-group">
+              <label class="form-label" for="guest-name">Your Name *</label>
+              <input type="text" id="guest-name" class="form-control" placeholder="e.g. Faizan Mir" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label class="form-label" for="guest-phone">Phone / WhatsApp Number *</label>
+              <input type="tel" id="guest-phone" class="form-control" placeholder="+91 78897 81101" required>
+            </div>
+
+            <!-- Dining Type / Seating Area Selection (Radio Tiles) -->
+            <div class="form-group full">
+              <label class="form-label">Dining Preference *</label>
+              <div class="radio-tiles">
+                
+                <div class="radio-tile selected" data-value="Cozy Dine-In Table">
+                  <div class="tile-title">Cozy Dine-In Table</div>
+                  <div class="tile-sub">Sit down inside our brick dining room</div>
+                </div>
+
+                <div class="radio-tile" data-value="Grill Counter Stool">
+                  <div class="tile-title">Live Grill Counter</div>
+                  <div class="tile-sub">Front row watching the charcoal flame</div>
+                </div>
+
+                <div class="radio-tile" data-value="Takeaway / Ready-To-Eat Pickup">
+                  <div class="tile-title">Takeaway Pickup</div>
+                  <div class="tile-sub">Packed hot and ready to take home</div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Number of Guests -->
+            <div class="form-group">
+              <label class="form-label" for="booking-guests">Number of People *</label>
+              <select id="booking-guests" class="form-control" required>
+                <option value="1">1 Person</option>
+                <option value="2" selected>2 People (Couple / Friends)</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People (Table)</option>
+                <option value="5">5 to 6 People (Group)</option>
+                <option value="8">8 to 10 People (Party)</option>
+              </select>
+            </div>
+
+            <!-- Time Selection -->
+            <div class="form-group">
+              <label class="form-label" for="booking-time">Approximate Time *</label>
+              <select id="booking-time" class="form-control" required>
+                <option value="Now / In 15 mins">Immediate (In 15-20 mins)</option>
+                <option value="1:00 PM">1:00 PM (Lunch)</option>
+                <option value="2:30 PM">2:30 PM (Late Lunch)</option>
+                <option value="5:30 PM">5:30 PM (Evening Snack / Tea)</option>
+                <option value="7:00 PM">7:00 PM (Dinner Sitting)</option>
+                <option value="8:15 PM" selected>8:15 PM (Prime Dinner)</option>
+                <option value="9:30 PM">9:30 PM (Late Night Feast)</option>
+              </select>
+            </div>
+
+            <!-- Items / Notes -->
+            <div class="form-group full">
+              <label class="form-label" for="booking-notes">Items You'd Like Prepared Ahead / Special Requests</label>
+              <textarea id="booking-notes" class="form-control" rows="3" placeholder="e.g. 1 Beef Steak (₹349), 1 Kurkure Momo Full (₹129), 2 Mint Mojitos (₹158)..."></textarea>
+            </div>
+
+          </div>
+
+          <!-- Submit Button -->
+          <div style="text-align: center; margin-top: 40px;">
+            <button type="submit" class="btn-brass" style="min-width: 260px;">Confirm Request ✦</button>
+            <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 14px;">
+              Ready-to-eat orders can also be placed instantly via call at <strong>+91 78897 81101</strong>.
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= GOOGLE MAPS LOCATION SHOWCASE ================= -->
+  <section class="editorial-section bg-walnut">
+    <div class="container">
+      <div class="editorial-grid">
+        
+        <div class="reveal-on-scroll">
+          <div class="eyebrow">📍 Find Us in Downtown Srinagar</div>
+          <h2 class="section-title">Visit <em>Efren in Khoja Bazar</em></h2>
+          <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 24px;">
+            We are located in Chinkral Mohalla, Khoja Bazar, Downtown Srinagar (190001). Tucked into the historic bazaar with easy parking nearby and landmark access.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
+            <div style="display: flex; gap: 14px; align-items: baseline;">
+              <span style="color: var(--tarnished-brass); font-family: var(--font-serif-royal);">EXACT ADDRESS:</span>
+              <span style="color: var(--parchment);">Chinkral Mohalla, Khoja Bazar, Downtown Srinagar, J&amp;K 190001</span>
+            </div>
+            <div style="display: flex; gap: 14px; align-items: baseline;">
+              <span style="color: var(--tarnished-brass); font-family: var(--font-serif-royal);">DIRECT PHONES:</span>
+              <span style="color: var(--parchment);">
+                <a href="tel:+917889781101" style="color: var(--brass-bright); font-weight: 600;">+91 78897 81101</a> / 
+                <a href="tel:+917006629278" style="color: var(--brass-bright); font-weight: 600;">+91 70066 29278</a>
+              </span>
+            </div>
+            <div style="display: flex; gap: 14px; align-items: baseline;">
+              <span style="color: var(--tarnished-brass); font-family: var(--font-serif-royal);">INSTAGRAM:</span>
+              <span style="color: var(--parchment);"><a href="https://instagram.com/efren.srinagar" target="_blank" style="color: var(--tarnished-brass);">@efren.srinagar</a></span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="https://maps.app.goo.gl/sVBspjCtsgYMoenR8" target="_blank" class="btn-brass">📍 Open in Google Maps ✦</a>
+            <a href="tel:+917889781101" class="btn-ghost-brass">Direct Call Now</a>
+          </div>
+        </div>
+
+        <div class="archival-frame reveal-on-scroll">
+          <img src="assets/images/bistro-storefront.jpg" alt="Efren Bistro storefront on Khoja Bazar street corner" width="800" height="600" loading="lazy">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING CONFIRMATION MODAL ================= -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="modal-box">
+      <div class="modal-seal">✦</div>
+      <h3 id="modal-heading" style="font-family: var(--font-serif-display); font-size: 1.8rem; color: var(--parchment); margin-bottom: 12px;">
+        Request Received
+      </h3>
+      <div class="ornate-divider center" style="margin: 18px auto;">✦</div>
+      <p id="modal-summary" style="font-size: 0.98rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 28px;">
+        <!-- Filled dynamically via JavaScript -->
+      </p>
+      <button type="button" class="btn-brass" id="modal-close-btn" style="min-width: 180px;">Done ✦</button>
+    </div>
+  </div>
+
+  <!-- ================= SITE FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <div class="brand-crest" style="margin-bottom: 20px;">
+            <div class="brand-monogram">E</div>
+            <div class="brand-text">
+              <span class="brand-name">EFREN</span>
+              <span class="brand-tag">Bistro &amp; Grill · Downtown Srinagar</span>
+            </div>
+          </div>
+          <p class="footer-info-p">
+            <em>Ek Baar Khao Ge, Baar Baar Aao Ge.</em><br>
+            A cozy neighborhood dine-in &amp; ready-to-eat bistro in Khoja Bazar, Downtown Srinagar.
+          </p>
+          <div style="font-family: var(--font-serif-royal); font-size: 0.76rem; letter-spacing: 0.16em; color: var(--tarnished-brass);">
+            FOLLOW US: @efren.srinagar
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Directory</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">I. Home</a></li>
+            <li><a href="story.html">II. Our Heritage</a></li>
+            <li><a href="menu.html">III. The Menu</a></li>
+            <li><a href="atmosphere.html">IV. The Bistro</a></li>
+            <li><a href="reservations.html">V. Dine-In &amp; Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hours &amp; Service</h4>
+          <p class="footer-info-p">
+            <strong>Open 7 Days a Week</strong><br>
+            Dine-In &amp; Counter: 11:30 AM – 10:30 PM<br>
+            Live Charcoal Grill: From 12:00 PM<br>
+          </p>
+          <p class="footer-info-p">
+            <strong>Instagram</strong><br>
+            <a href="https://instagram.com/efren.srinagar" target="_blank" style="color: var(--tarnished-brass);">@efren.srinagar</a>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Location &amp; Direct Orders</h4>
+          <p class="footer-info-p">
+            Chinkral Mohalla, Khoja Bazar,<br>
+            Downtown Srinagar, J&amp;K 190001<br>
+            <a href="https://maps.app.goo.gl/sVBspjCtsgYMoenR8" target="_blank" style="color: var(--tarnished-brass); text-decoration: underline;">📍 View on Google Maps</a>
+          </p>
+          <p class="footer-info-p">
+            <strong>Call / WhatsApp:</strong><br>
+            <a href="tel:+917889781101" style="color: var(--brass-bright);">+91 78897 81101</a><br>
+            <a href="tel:+917006629278" style="color: var(--brass-bright);">+91 70066 29278</a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Efren Bistro &amp; Grill. All Rights Reserved.</div>
+        <div style="display: flex; gap: 24px;">
+          <span>Downtown Srinagar</span>
+          <span>✦</span>
+          <span>Khoja Bazar</span>
+          <span>✦</span>
+          <span>Ek Baar Khao Ge, Baar Baar Aao Ge</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MOBILE STICKY QUICK ACTION BAR ================= -->
+  <aside class="mobile-action-bar" aria-label="Quick Actions">
+    <a href="tel:+917889781101" class="mobile-action-btn primary">
+      <span class="action-icon">📞</span>
+      <span>Call Order</span>
+    </a>
+    <a href="menu.html" class="mobile-action-btn">
+      <span class="action-icon">📋</span>
+      <span>Menu</span>
+    </a>
+    <a href="reservations.html" class="mobile-action-btn active">
+      <span class="action-icon">🍽️</span>
+      <span>Dine-In</span>
+    </a>
+    <a href="https://maps.app.goo.gl/sVBspjCtsgYMoenR8" target="_blank" class="mobile-action-btn">
+      <span class="action-icon">📍</span>
+      <span>Maps</span>
+    </a>
+  </aside>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
